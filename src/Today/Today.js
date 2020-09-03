@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Today.css'
 import axios from 'axios'
 import Pusher from 'pusher-js'
+import { Link } from 'react-router-dom';
 
 class Today extends Component {
     // Adds a class constructor that assigns the initial state values:
@@ -44,6 +45,40 @@ class Today extends Component {
                     <div className="column ltc--section">
                         <h5>${this.state.ltcprice}</h5>
                         <p>1 LTC</p>
+                    </div>
+                    <div className="column ltc--section">
+                        <h5>${this.state.ltcprice}</h5>
+                        <p>1 LATC</p>
+                    </div>
+                    <div className="column ltc--section">
+                        <h5>${this.state.ltcprice}</h5>
+                        <p>1 ATC</p>
+                    </div>
+                    <div className="column ltc--section">
+                        <h5>${this.state.ltcprice}</h5>
+                        <p>1 BTC</p>
+                    </div>
+
+                    <div className="column ltc--section">
+                        <h5>${this.state.ltcprice}</h5>
+                        <p>5 RUPEE </p>
+                    </div>
+                    <div className="column ltc--section">
+                        <h5>${this.state.ltcprice}</h5>
+                        <p>1 CTC</p>
+                    </div>
+                    <div className="column ltc--section">
+                        <h5>${this.state.ltcprice}</h5>
+                        <p>1 CTC</p>
+                    </div>
+
+                    <div className="column ltc--section">
+                        <h5>${this.state.ltcprice}</h5>
+                        <p>1 EURO</p>
+                    </div>
+                    <div className="column ltc--section">
+                        <h5>${this.state.ltcprice}</h5>
+                        <p>1 DOLLAR</p>
                     </div>
                 </div>
             </div>
