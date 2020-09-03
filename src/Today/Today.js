@@ -67,10 +67,7 @@ class Today extends Component {
                         <h5>${this.state.ltcprice}</h5>
                         <p>1 CTC</p>
                     </div>
-                    <div className="column ltc--section">
-                        <h5>${this.state.ltcprice}</h5>
-                        <p>1 CTC</p>
-                    </div>
+
 
                     <div className="column ltc--section">
                         <h5>${this.state.ltcprice}</h5>
