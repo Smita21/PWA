@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './Today.css'
 import axios from 'axios'
 import Pusher from 'pusher-js'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 class Today extends Component {
     // Adds a class constructor that assigns the initial state values:
@@ -32,7 +34,9 @@ class Today extends Component {
     render() {
         return (
             <div className="today--section container">
-                <h2>Current Price</h2>
+                <h2>Dashboard Page</h2>
+                <h1>Progressive Web Apps are web apps that use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications. Progressive Web Apps are a useful design pattern, though they aren't a formalized standard. PWA can be thought of as similar to AJAX or other similar patterns that encompass a set of application attributes, including use of specific web technologies and techniques. This set of docs tells you all you need to know about them.</h1>
+
                 <div className="columns today--section__box">
                     <div className="column btc--section">
                         <h5>${this.state.btcprice}</h5>
@@ -77,8 +81,13 @@ class Today extends Component {
                         <h5>${this.state.ltcprice}</h5>
                         <p>1 DOLLAR</p>
                     </div>
+
                 </div>
+                <h1>Progressive Web Apps are web apps that use emerging web browser APIs and features along with traditional progressive enhancement strategy to bring a native app-like user experience to cross-platform web applications. Progressive Web Apps are a useful design pattern, though they aren't a formalized standard. PWA can be thought of as similar to AJAX or other similar patterns that encompass a set of application attributes, including use of specific web technologies and techniques. This set of docs tells you all you need to know about them.</h1>
+
+                <Link className="button" to="/">Back to home</Link>
             </div>
+
         )
     }
 }
